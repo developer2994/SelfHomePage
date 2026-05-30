@@ -1,0 +1,169 @@
+body {
+    /* 無駄な余白を消す */
+    margin: 0; 
+}
+
+/* ヘッダーの全体 */
+header {
+    position: relative;
+    /* 横幅全体に広げる */
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+
+/* ヘッダー画像 */
+#headerPhoto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ヘッダーのタイトル部分 */
+#headerNote {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* メニュー全体の設定 */
+#menu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    gap: 24px;
+    
+}
+/* メニューアイテムひとつひとつの設定 */
+.menuItem {
+    margin: 0;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* メニューにホバー機能をつける */
+#menu a:hover {
+    border-bottom: 1px solid #F8F3E8;
+}
+
+/* ヘッダーの文言 */
+#headerText {
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+
+/* ヘッダーのキャッチコピーの部分 */
+#headerCatchCopy {
+    color: #F8F3E8;
+    font-size: 40px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    margin-bottom: 10px;
+}
+
+/* キャッチコピー下の文言 */
+#smallHeadText {
+    color: #F8F3E8;
+    font-size: 15px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* 最新記事の文字のところ */
+#latestarticle {
+    font-size: 20px;
+    margin-left: 160px;
+    /* 最新記事の横の棒 */
+    border-left: 5px solid #000033;
+    /* 最新記事と棒の間のギャップ */
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+/* 写真のサイズ */
+.photo {
+    width: 400px;
+    height: 250px;
+}
+
+/* 記事のサムネ全体のレイアウト */
+.contents {
+    display: flex;
+    gap: 28px;
+    max-width: 1100px; /*　最大の横幅  */
+    margin: 0 auto 30px auto;
+    background-color: white; /* 背景を白にする */
+    border-radius: 16px;  /* 角を丸くする */
+    padding: 24px 10px;  /* 内側の余白 */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* 影 */
+}
+
+/* サムネ内の文言レイアウト */
+.article-heading {
+    margin-left: 20px;
+}
+
+/* 種類-トレーニング */
+.article-traning {
+    width: 100px;
+    padding: 4px 1px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #6699FF;
+    background-color: #99CCFF;
+
+}
+
+/* 種類-レース */
+.article-race {
+    width: 50px;
+    padding: 4px 5px 0 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #6699FF;
+    background-color: #99CCFF;
+}
+
+/* サムネのタイトル */
+.article-title {
+    font-size: 25px;
+}
+
+/* 記事の説明 */
+.article-text {
+    margin-bottom: 30px;
+}
+
+
+/* Read moreのレイアウト */
+#readmore {
+    padding: 15px 15px;
+    margin: 3px 0 ;
+    border-radius: 5px;
+    color: #6699FF;
+    text-decoration: none;
+    background-color: #000033;
+    cursor: pointer;
+}
+
+#small {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    text-align: center;
+    background-color: #000033;
+    color: aliceblue;
+}
